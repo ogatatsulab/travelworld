@@ -20,5 +20,10 @@ public class NewsServiceImpl implements NewsService {
   public List<News> findAll() {
     return newsRepository.findAll();
   }
+  
+  @Override
+  public void saveAndFlush( News news ) {
+    newsRepository.saveAndFlush( news );
+  }
 
 }

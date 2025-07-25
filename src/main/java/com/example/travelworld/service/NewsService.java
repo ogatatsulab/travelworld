@@ -6,4 +6,5 @@ import com.example.travelworld.entity.News;
 
 public interface NewsService {
   List<News> findAll();
+  void saveAndFlush( News news );
 }
